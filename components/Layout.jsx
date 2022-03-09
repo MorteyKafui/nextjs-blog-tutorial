@@ -29,12 +29,12 @@ export default function Layout({ children, home }) {
         {home ? (
           <>
             <Image
-              priority
               src='/profile-pic.JPG'
               className={utilStyles.borderCircle}
               height={200}
               width={200}
               alt={name}
+              loading='lazy'
             />
             <h1 className={utilStyles.heading2Xl}>{name}</h1>
           </>
@@ -43,12 +43,12 @@ export default function Layout({ children, home }) {
             <Link href='/'>
               <a>
                 <Image
-                  priority
                   src='/profile-pic.JPG'
                   className={utilStyles.borderCircle}
                   height={200}
                   width={200}
                   alt={name}
+                  loading='lazy'
                 />
               </a>
             </Link>
